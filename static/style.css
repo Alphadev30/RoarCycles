@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rowdies', cursive;
+}
+#navbar {
+    display: flex;
+    top: 0px;
+    position: sticky;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 76%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.09;
+}
+#logo {
+     margin: 20px 20px;
+     filter: invert(100%);
+}
+#logo img{
+    height: 40px;
+    margin: 3px 5px;
+}
+#logo2 img{
+    height: 34px;
+    width: 32px;
+    padding: 6px 15px;
+    filter: invert(100%);
+}
+#nav1{
+    top: 0px;
+}
+#nav1 ul{
+    display: flex;
+    margin: 15px 680px;
+}
+#nav1 ul li{
+    display: flex;
+    width: 90px;
+    height: 40px;
+    list-style: none;
+    padding: 5px;
+    font-size: 1.0rem;
+    text-align: center;
+}
+
+#nav1 ul li a{
+    color:white;
+    margin: 0px 12px;
+    padding: 3px 20px;
+    text-decoration: none;
+    
+}
+#nav1 ul li a:hover{
+    color: rgb(77, 74, 74);
+    background-color: white;
+}
+
+#homepage {
+    display: flex;
+ 	flex-direction: column;
+ 	padding: 0px 200px;
+ 	justify-content: center;
+ 	align-items: center;
+ 	height: 605px;
+}
+#homepage::before{
+    content: "";
+    background: url('2.jpg'); 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height:126%   ;
+    width: 100%  ;
+    z-index: -1;
+    opacity: 0.89;
+}
+#homepage h1{
+    font-size: 3rem;
+}
+
+.btn {
+    margin: 10px 10px;
+    padding: 8px 22px;
+ 	border: 2px solid white;
+ 	background-color: rgb(221, 175, 175);
+ 	color: white;
+ 	cursor: pointer;
+ 	font-size: 1.5rem;
+	border-radius: 7px;
+ 	transition-duration: 0.4s;
+    transition-delay: 0.1s
+     }
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.btn:hover{
+ 	border: 3px solid white;
+ 	background-color: #e5a0a0;
+}
+
+#our_products {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    /*justify-content: center;
+    align-items: center; */
+    height: 690px;
+}
+#our_products::before{
+    content: "";
+    background: url('dark.jpg'); 
+    position: absolute;
+    left: 0px;
+    height:126%   ;
+    width: 100%  ;
+    z-index: -1;
+    opacity: 0.89;
+}
+#our_products h1{
+    margin: 12px -150px;
+    padding: 10px;
+    color: wheat;
+    border: 1px solid white;
+    width: 200px;
+}
+#products{
+    margin: 30px -160px;
+    display: flex;
+}
+#products .box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+#products .box img{
+    height: 270px;
+    margin: auto;
+    display: block; 
+    padding: 5px;
+    border: 1px solid white;
+}
+
+#products .box img:hover {
+    height: 350px;
+   
+    padding: 5px;
+    border: 1px solid white;
+}
+#headings {
+    display: flex;
+    margin: 20px -150px;
+    
+}
+#headings h2{
+    color:white;
+    margin: -40px 90px;
+    width: 200px;
+    padding:-2px 150px;
+}
+
+
+#categories {
+    
+        display: flex;
+        flex-direction: column;
+        padding: 0px 200px;
+        /*justify-content: center;
+        align-items: center; */
+        height: 605px;
+}
+
+#categories::before{
+        content: "";
+        background: url('3.jpg'); 
+        position: absolute;
+        left: 0px;
+        height:89%   ;
+        width: 100%  ;
+        z-index: -1;
+        opacity: 0.89;
+}
+
+#categories h1{
+    margin: 12px -150px;
+    padding: 10px;
+    color: wheat;
+    border: 1px solid white;
+    width: 200px;
+}
+
+.wrapper1 {
+    font-family: sans-serif;
+    width: 30%;
+    margin: 0 auto;
+    left: 19%;
+    top: 290%; 
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.wrapper1 img{
+    display: block;
+    width: 75%;
+    height: auto;
+}
+.content1 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.content1 a{
+    color: white;
+    text-decoration: none;
+}
+.content2 a{
+    color: white;
+    text-decoration: none;
+}
+.content3 a{
+    color: white;
+    text-decoration: none;
+}
+.overlay1 {
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+height: 100%;
+width: 75%;
+opacity: 0;
+transition: .5s ease;
+background: rgba(255, 119, 29, 0.9);
+}
+
+.wrapper1:hover .overlay1 {
+    opacity: 1;
+}
+
+
+.wrapper2 {
+    font-family: sans-serif;
+    width: 30%;
+    margin: 0 auto;
+    left: 50%;
+    top: 290%; 
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.wrapper2 img{
+    display: block;
+    width: 75%;
+    height: auto;
+}
+.content2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.overlay2 {
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+height: 100%;
+width: 75%;
+opacity: 0;
+transition: .5s ease;
+background: rgba(255, 119, 29, 0.9);
+}
+
+.wrapper2:hover .overlay2 {
+    opacity: 1;
+}
+
+.wrapper3 {
+    font-family: sans-serif;
+    width: 30%;
+    margin: 0 auto;
+    left: 80%;
+    top: 290%; 
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.wrapper3 img{
+    display: block;
+    width: 75%;
+    height: auto;
+}
+.content3 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.overlay3 {
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+height: 100%;
+width: 75%;
+opacity: 0;
+transition: .5s ease;
+background: rgba(255, 119, 29, 0.9);
+}
+
+.wrapper3:hover .overlay3 {
+    opacity: 1;
+}
+
+#about {
+    display: flex;
+ 	flex-direction: column;
+ 	padding: 0px 200px;
+ 	justify-content: center;
+ 	align-items: center;
+ 	height: 600px;
+}
+#about::before{
+    content: "";
+    background: url('4.jpg'); 
+    position: absolute; 
+    left: 0px;
+    height:126%   ;
+    width: 100%  ;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+
+}
+#about h1{
+    color: white;
+}
+
+.author p{
+    color: white;
+}
+
+.author img{
+    width: 50%;
+    left: 20%;
+    padding: 20px;
+}
+.author:hover {
+    border: 1px solid white;
+}
+
+
+.myform {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+.MyInput {
+    padding: 10px;
+    margin: 5px 0px;
+}
+
+#footer{
+    margin: 0px auto;
+    border-top: 1px solid white;
+    width: 150px;
+    text-align: center;
+    color: violet;
+}
+#footer a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
